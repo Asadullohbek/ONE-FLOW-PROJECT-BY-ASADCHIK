@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Work+Sans:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.4s ease;
+}
+
+*::selection {
+    background: #DCAEB9;
+    color: #fff;
+}
+
+:root {
+    --text-color: #013A4C;
+    --hover-bg-color: #FFD063;
+    --bg-color: #013A4C;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(3px);
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(1, 58, 76, 0.2);
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-in {
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 1px solid var(--text-color);
+    border-radius: 8px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+header nav ul li:active {
+    transform: translateY(3px);
+}
+
+header nav ul li button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: 'Work Sans', sans-serif;
+    color: var(--text-color);
+    border-radius: 8px;
+}
+
+header nav ul li button:hover {
+    background: var(--hover-bg-color);
+}
+
+.fa-earth-americas {
+    background: none;
+}
+
+.menu {
+    font-size: 30px;
+    display: none;
+}
+
+
+/* --------- header body ----------- */
+
+.header-body {
+    width: 100%;
+    height: 88vh;
+    background: url("../img/bgIMg.png") no-repeat center;
+    background-size: cover;
+}
+
+.text {
+    padding: 210px 80px;
+}
+
+.text h1 {
+    font-size: 76px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.text p {
+    width: 491px;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    font-family: 'Work Sans';
+    font-weight: 400;
+    color: var(--text-color);
+    margin: 20px 0;
+}
+
+.text .btns {
+    display: flex;
+}
+
+.text .btns button {
+    padding: 10px 20px;
+    background: var(--bg-color);
+    border-radius: 8px;
+    margin-right: 20px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.text .btns button:hover {
+    background: var(--hover-bg-color);
+    color: var(--text-color);
+}
+
+@media (max-width:1105px) {
+    header nav ul {
+        display: none;
+    }
+    .log-in {
+        display: inline-block;
+    }
+    .earth {
+        display: none;
+    }
+    .menu {
+        display: inline-block;
+    }
+    .text {
+        padding: 100px 80px 0;
+    }
+}
+
+@media (max-width:667px) {
+    header nav {
+        padding: 0 30px;
+    }
+    .text {
+        padding: 100px 50px 0;
+    }
+    .text h1 {
+        font-size: 50px;
+    }
+    .text p {
+        width: 100%;
+        font-size: 20px;
+    }
+}
+
+@media (max-width:445px) {
+    header nav {
+        padding: 0 10px;
+    }
+    .text {
+        padding: 100px 10px 0;
+    }
+}
+
+@media (max-width:363px) {
+    .header-body {
+        background: url(https://cs9.pikabu.ru/post_img/2019/12/10/2/og_og_157593970926920197.jpg);
+    }
+    .text h1 {
+        color: #fff;
+        font-size: 40px;
+    }
+    .text p {
+        color: #fff;
+    }
+    .text .btns button {
+        padding: 10px;
+    }
+}
